@@ -1,0 +1,1134 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#"
+     xml:base="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#year -->
+
+    <rdfs:Datatype rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#year">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1900</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2022</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+    </rdfs:Datatype>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasBody -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasBody">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasEngine -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasEngine">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasExtra -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasExtra">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasHorsePower -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasHorsePower">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasEngine"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasTransmission -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasTransmission">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasEngine"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasDoors -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasDoors">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasSeats -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasSeats">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#AirConditioner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#AirConditioner">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#CarExtraFeatures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#AutoPilot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#AutoPilot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#CarExtraFeatures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Automatic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Automatic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Transmission"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Manual"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Car -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Car"/>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#CarBody -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#CarBody">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#CarCharacteristics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#CarCharacteristics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#CarCharacteristics">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#CarClass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#CarClass">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#CarDoorsNumber -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#CarDoorsNumber">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#CarCharacteristics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#CarEngine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#CarEngine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#CarCharacteristics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#CarExtraFeatures -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#CarExtraFeatures">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#CarCharacteristics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Combustion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Combustion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#CarEngine"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Electric"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#ConvertibleRoof -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#ConvertibleRoof">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#CarExtraFeatures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Coupe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Coupe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#CarBody"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Economical -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Economical">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasEngine"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Electric"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#CarClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Electric -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Electric">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#CarEngine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#FamilyCar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#FamilyCar">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasExtra"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#AirConditioner"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasBody"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Minivan"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Sedan"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#StationWagon"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasEngine"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Combustion"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasHorsePower"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#6Cylinder"/>
+                                    <rdf:Description rdf:about="https://github.com/mbeclawski/cars-ontology#4Cylinder"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasTransmission"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Manual"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasDoors"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</xsd:minInclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</xsd:maxInclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:intersectionOf>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasSeats"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#CarClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Ferrari -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Ferrari">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Car"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasBody"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#SuperCar"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasEngine"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Combustion"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasExtra"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Spoiler"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasHorsePower"/>
+                        <owl:allValuesFrom rdf:resource="https://github.com/mbeclawski/cars-ontology#10Cylinder"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasTransmission"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Manual"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasDoors"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasSeats"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Ford -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Ford">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Car"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasBody"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Pickup"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasEngine"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Combustion"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasHorsePower"/>
+                        <owl:allValuesFrom rdf:resource="https://github.com/mbeclawski/cars-ontology#4Cylinder"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasTransmission"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Manual"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasDoors"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasSeats"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Hatchback -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Hatchback">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#CarBody"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#HorsePower -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#HorsePower">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Combustion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#LeatherSeats -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#LeatherSeats">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#CarExtraFeatures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#LuxuryCar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#LuxuryCar">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasExtra"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#AirConditioner"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasExtra"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#AutoPilot"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#LeatherSeats"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#ParkingSensor"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#SeatHeater"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#SunRoof"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#TouchScreen"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasBody"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#SUV"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Sedan"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasEngine"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Combustion"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasHorsePower"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#6Cylinder"/>
+                                    <rdf:Description rdf:about="https://github.com/mbeclawski/cars-ontology#8Cylinder"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasTransmission"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Automatic"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasDoors"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasSeats"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#CarClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Manual -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Manual">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Transmission"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Micro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Micro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#CarBody"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#MiniCooper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#MiniCooper">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Car"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasBody"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Micro"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasEngine"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Combustion"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasHorsePower"/>
+                        <owl:allValuesFrom rdf:resource="https://github.com/mbeclawski/cars-ontology#4Cylinder"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasTransmission"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Manual"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasDoors"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasSeats"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Minivan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Minivan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#CarBody"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#ParkingSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#ParkingSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#CarExtraFeatures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Pickup -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Pickup">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#CarBody"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#RangeRover -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#RangeRover">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Car"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasExtra"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#AirConditioner"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#AutoPilot"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#LeatherSeats"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#TouchScreen"/>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasBody"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#SUV"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasEngine"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Combustion"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasHorsePower"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#6Cylinder"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasTransmission"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Automatic"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasDoors"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasSeats"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Renault -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Renault">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Car"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasExtra"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#AirConditioner"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasBody"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#StationWagon"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasEngine"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Combustion"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasHorsePower"/>
+                        <owl:allValuesFrom rdf:resource="https://github.com/mbeclawski/cars-ontology#4Cylinder"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasTransmission"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Manual"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasDoors"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasSeats"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#SUV -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#SUV">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#CarBody"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#SeatHeater -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#SeatHeater">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#CarExtraFeatures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Sedan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Sedan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#CarBody"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#SmallCar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#SmallCar">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasBody"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Hatchback"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Micro"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasEngine"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Combustion"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasHorsePower"/>
+                        <owl:allValuesFrom rdf:resource="https://github.com/mbeclawski/cars-ontology#4Cylinder"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasTransmission"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Manual"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasDoors"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</xsd:minInclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</xsd:maxInclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:intersectionOf>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasSeats"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</xsd:minInclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</xsd:maxInclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:intersectionOf>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#CarClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Spoiler -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Spoiler">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#CarExtraFeatures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#SportsCar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#SportsCar">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasBody"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Coupe"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#SuperCar"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasEngine"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Combustion"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasExtra"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#AutoPilot"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#ConvertibleRoof"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Spoiler"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasHorsePower"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="https://github.com/mbeclawski/cars-ontology#10Cylinder"/>
+                                    <rdf:Description rdf:about="https://github.com/mbeclawski/cars-ontology#8Cylinder"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasTransmission"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Automatic"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Manual"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasSeats"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</xsd:minInclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</xsd:maxInclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:intersectionOf>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasDoors"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#CarClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#StationWagon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#StationWagon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#CarBody"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#SunRoof -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#SunRoof">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#CarExtraFeatures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#SuperCar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#SuperCar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#CarBody"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Tesla -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Tesla">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Car"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasBody"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Sedan"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasEngine"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Electric"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#TouchScreen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#TouchScreen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#CarExtraFeatures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Transmission -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Transmission">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Combustion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Truck -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Truck">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasBody"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Pickup"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Van"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasEngine"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Combustion"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasHorsePower"/>
+                        <owl:allValuesFrom rdf:resource="https://github.com/mbeclawski/cars-ontology#4Cylinder"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasTransmission"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Manual"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasDoors"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#hasSeats"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#CarClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Van -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Van">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#CarBody"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#6Cylinder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#6Cylinder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#HorsePower"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mbeclawski/cars-ontology#10Cylinder -->
+
+    <owl:Class rdf:about="https://github.com/mbeclawski/cars-ontology#10Cylinder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#HorsePower"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mbeclawski/cars-ontology#4Cylinder -->
+
+    <owl:Class rdf:about="https://github.com/mbeclawski/cars-ontology#4Cylinder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#HorsePower"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mbeclawski/cars-ontology#8Cylinder -->
+
+    <owl:Class rdf:about="https://github.com/mbeclawski/cars-ontology#8Cylinder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#HorsePower"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Coupe"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Hatchback"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Micro"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Minivan"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Pickup"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#SUV"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Sedan"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#SuperCar"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Van"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Economical"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#FamilyCar"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#LuxuryCar"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#SmallCar"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#SportsCar"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#Truck"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/waelkhayati/ontologies/2022/5/untitled-ontology-12#6Cylinder"/>
+            <rdf:Description rdf:about="https://github.com/mbeclawski/cars-ontology#10Cylinder"/>
+            <rdf:Description rdf:about="https://github.com/mbeclawski/cars-ontology#4Cylinder"/>
+            <rdf:Description rdf:about="https://github.com/mbeclawski/cars-ontology#8Cylinder"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
